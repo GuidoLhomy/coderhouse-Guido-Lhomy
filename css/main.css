@@ -104,7 +104,14 @@ body { background-color: azure ;
             width: 90%;
             margin: auto;
         }
+     
         
+        * TRANSICION NAVBAR */
+        .navbar .menu li:hover {
+            background-color: rgb(186, 186, 32); 
+            transition: background-color 1s; 
+            }
+    
 
     @media (min-width: 600px) {
         body {
