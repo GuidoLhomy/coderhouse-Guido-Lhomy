@@ -2,10 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+        }
 
+/* Tipografias*/
 
-body { background-color: azure ;
+.navbar , .footer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+        }
+
+h1 {    
+    font-family: 'Koulen', cursive;
+    letter-spacing: 5px;
+    padding: 0 0 10%;
+}
+
+.h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos generales */
+
+body { 
+    background-color: #F3E5D3 ;
     text-align: center;
     display: grid;
     grid-template-areas: 
@@ -17,7 +37,7 @@ body { background-color: azure ;
     }
 
     .navbar {
-        background-color: black;
+        background-color: #6B502E;
         color: wheat;
         align-items: center;
         grid-area: navbar;
@@ -40,15 +60,14 @@ body { background-color: azure ;
        
     .banner-principal {
         width: 100%;
-    
-    }
+        }
     
     
     .imagen-body {
         width: 60%;
         border-radius: 15%;
         animation-name: agrandarimagen;
-    animation-duration: 3s;
+        animation-duration: 3s;
     }
     
     .header {
@@ -67,6 +86,7 @@ body { background-color: azure ;
     }
     
     .footer {
+        
         grid-area: footer;
         
     }
@@ -79,20 +99,13 @@ body { background-color: azure ;
             }
             
     
-    h1 { 
-            text-align: center;
-            text-decoration: underline #000;
-            font-size: 35px;
+    h1 h2 {          
+        text-align: center;
+        
             }
     
-    h2{ 
-            text-align: center;
-               }
     
-    h3 { 
-        text-align: center;
-        color: rgb(163, 17, 17);
-                }
+  
     
     ol li {
             padding: 10px;
@@ -108,17 +121,16 @@ body { background-color: azure ;
         }
      
         
-        /* TRANSICION NAVBAR */
-        .navbar .menu li:hover {
-            background-color: rgb(195, 179, 13); 
-            transition: background-color 1s; 
+/* TRANSICION NAVBAR */
+.navbar .menu li:hover {
+    background-color: rgb(195, 179, 13); 
+    transition: background-color 1s; 
             }
     
 
     @media (min-width: 600px) {
         body {
-        background-color: white;
-        grid-template-columns: 30% auto;
+                grid-template-columns: 30% auto;
         grid-template-rows: 1fr;
         grid-template-areas: 
         "navbar navbar"
@@ -126,13 +138,16 @@ body { background-color: azure ;
         "aside main"
         "footer footer";
             }
-            .navbar {
-                align-items: center;
+
+        .navbar {
+            align-items: center;
             }
     
             .navbar .menu li{
                 display: inline-flex;
             }   
+
+    
     
     .main {
         border: solid black 2px;
@@ -141,7 +156,12 @@ body { background-color: azure ;
             .footer {
                 justify-content: center;
             }
+    h1 {
+        font-size: 60px;
+
+    }
         }   
+
     
 /* ANIMACION */                
 
@@ -181,7 +201,7 @@ body { background-color: azure ;
     
         @media (min-width: 900px) {
             body {
-                background-color: beige;
+            
             grid-template-columns: 350px auto;
             grid-template-rows: 1fr;
             grid-template-areas: 
@@ -207,7 +227,7 @@ body { background-color: azure ;
             
     @media (min-width: 1200px) {
                 body {
-                background-color: aliceblue;
+                
                 grid-template-columns: 35% auto;
                 grid-template-rows: 1fr ;
                 grid-template-areas: 
